@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/data')
+fetch("https://mygenai-bt8x.onrender.com/data")
   .then(res => res.json())
   .then(jsonld => {
     const triples = [];
