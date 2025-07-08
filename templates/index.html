@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tourism SPARQL Explorer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h2>SPARQL Query Builder</h2>
+  <select id="type">
+    <option value="TouristAttraction">Tourist Attraction</option>
+    <option value="LodgingBusiness">Lodging Business</option>
+  </select>
+  <button onclick="buildQuery()">Build Query</button>
+
+  <textarea id="query" rows="6" cols="80"></textarea><br>
+  <button onclick="runQuery()">Run Query</button>
+
+  <pre id="results"></pre>
+
+  <h3>Map View</h3>
+  <div id="map" style="height: 400px;"></div>
+
+  <h3>Graph View</h3>
+  <svg width="800" height="600"></svg>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

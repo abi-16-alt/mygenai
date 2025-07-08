@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  },
+  "@id": "http://example.org/tourism#MeenakshiTemple",
+  "@type": "schema:TouristAttraction",
+  "schema:name": "Meenakshi Amman Temple",
+  "schema:location": "Madurai, Tamil Nadu",
+  "schema:price": "0.00",
+  "geo:lat": "9.9195",
+  "geo:long": "78.1195"
+}
