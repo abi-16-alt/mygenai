@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SPARQL Explorer</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+<body>
+  <h1>🧭 Tourism SPARQL Explorer</h1>
+
+  <h3>SPARQL Query</h3>
+  <textarea id="query" rows="6" cols="80">
+SELECT ?name ?location WHERE {
+  ?s a <http://schema.org/TouristAttraction> ;
+     <http://schema.org/name> ?name ;
+     <http://schema.org/location> ?location .
+}
+  </textarea><br>
+  <button onclick="runQuery()">Run Query</button>
+
+  <h3>Results</h3>
+  <pre id="results"></pre>
+
+  <h3>Graph View</h3>
+  <svg width="800" height="500"></svg>
+<h3>Map View</h3>
+<div id="map" style="height: 400px; margin-top: 10px;"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

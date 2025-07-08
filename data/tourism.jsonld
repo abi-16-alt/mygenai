@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "ex": "http://example.org/tourism#"
+  },
+  "@id": "ex:MeenakshiTemple",
+  "@type": "schema:TouristAttraction",
+  "schema:name": "Meenakshi Amman Temple",
+  "schema:location": "Madurai, Tamil Nadu",
+  "schema:touristType": "Cultural Heritage",
+  "schema:price": "0.00",
+  "schema:review": {
+    "@type": "schema:Review",
+    "schema:reviewRating": "5",
+    "schema:reviewBody": "A breathtaking temple with intricate architecture!",
+    "schema:author": "Priya"
+  },
+  "schema:geo": {
+    "@type": "geo:Point",
+    "geo:lat": "9.9195",
+    "geo:long": "78.1195"
+  },
+  "schema:nearby": {
+    "@type": "schema:LodgingBusiness",
+    "schema:name": "Heritage Madurai",
+    "schema:location": "Madurai",
+    "schema:priceRange": "₹5000–₹8000"
+  }
+}

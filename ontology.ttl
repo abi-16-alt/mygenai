@@ -1,0 +1,19 @@
+@prefix : <http://example.org/tourism#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:TouristAttraction a owl:Class .
+:City a owl:Class .
+
+:hasName a owl:DatatypeProperty ;
+         rdfs:domain :TouristAttraction ;
+         rdfs:range xsd:string .
+
+:hasLocation a owl:ObjectProperty ;
+             rdfs:domain :TouristAttraction ;
+             rdfs:range :City .
+
+:hasRating a owl:DatatypeProperty ;
+           rdfs:domain :TouristAttraction ;
+           rdfs:range xsd:decimal .

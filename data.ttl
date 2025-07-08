@@ -1,0 +1,10 @@
+@prefix : <http://example.org/tourism#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Chennai a :City ;
+         :hasName "Chennai" .
+
+:MarinaBeach a :TouristAttraction ;
+             :hasName "Marina Beach" ;
+             :hasLocation :Chennai ;
+             :hasRating "4.6"^^xsd:decimal .
